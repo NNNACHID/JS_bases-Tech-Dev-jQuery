@@ -8,3 +8,27 @@ console.log('----------');
 
 //1
 $('.jumbotron h1').text('Nicolas');
+
+//2
+$('#tagline').text('Do you know da wae ?');
+
+//3
+$('.navbar-nav:first').remove();
+
+//4
+$('.navbar-right span').replaceWith($('<i class="bi bi-person"></i>'));
+
+//5
+$('footer').html('<strong>Copyright 2021</strong>');
+
+//6
+$('.row p').text('Mon projet');
+
+//7
+$('.row img').attr("src", "plage.jpg");
+
+//8
+var newWork = $('#work1:first');
+
+
+
