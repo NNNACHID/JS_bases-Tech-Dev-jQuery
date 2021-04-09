@@ -28,7 +28,8 @@ $('.row p').text('Mon projet');
 $('.row img').attr("src", "plage.jpg");
 
 //8
-var newWork = $('#work1:first');
+$('#myLastProject').append('<img src=plagehouse.jpg style=height:250px alt=image>');
+$('#myLastProject').append('<p><strong>In da wae we trust</strong></p>');
 
-
-
+//9
+$('footer').addClass('intro');
