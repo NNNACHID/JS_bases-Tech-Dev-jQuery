@@ -14,9 +14,11 @@ $("#signUpButton").click(function(){
   window.alert("Merci " + str + ", nous vous tiendrons informé des différentes offres");
 });
 
-*/
-// 3 
 
-$("").dblclick(function(){
-  $("").hide();
-});
+// 3
+
+  $('a[href$="#product"]').dblclick(function () {
+    $('a[href$="#product"]').hide();
+  });
+*/  
+// 
