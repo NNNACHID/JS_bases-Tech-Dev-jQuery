@@ -20,5 +20,26 @@ $("#signUpButton").click(function(){
   $('a[href$="#product"]').dblclick(function () {
     $('a[href$="#product"]').hide();
   });
-*/  
-// 
+*/
+// 4
+
+// let i;
+
+var i = 1;
+
+
+  $("img").click(function () {
+    if ($("#cartIcon").hasClass("glyphicon-shopping-cart")) {
+
+      $("#cartIcon").attr("class", "glyphicon glyphicon-ok-circle");
+      $('a[href$="#Cart"]').append("(" + i + ")");
+      console.log("the onefdsfsd"); 
+
+    } else {
+
+      i ++;
+      $('a[href$="#Cart"]').replaceWith($('a[href$="#Cart"]').append("(" + i + ")"));
+      console.log("the one" + i);
+
+    }
+  });
