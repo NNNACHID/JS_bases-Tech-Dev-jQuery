@@ -6,12 +6,50 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-    <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <style>
+            body{
+                height:100vh;
+            } 
+
+            .row{
+                margin-top: 122px; 
+            }
+        </style>
+    
 </head>
 
 <body>
     <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <img src="g1.png" class="img-responsive" style="width: 100%" alt="Image" id="Pierre"/>
+                    </div>
+                    <div class="panel-footer">Pierre</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-danger">
+                    <div class="panel-body">
+                        <img src="g2.png" class="img-responsive" style="width: 100%" alt="Image" id="Ciseaux" />
+                    </div>
+                    <div class="panel-footer">Ciseaux</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-success">
+                    <div class="panel-body">
+                        <img src="g3.png" class="img-responsive" style="width: 100%" alt="Image" id="Feuille"/>
+                    </div>
+                    <div class="panel-footer">Feuille</div>
+                </div>
+            </div>
+        </div>
+        <div id="userChoice">
+        </div>
     </div>
 </body>
-
+<script src="script.js"></script>
 </html>
