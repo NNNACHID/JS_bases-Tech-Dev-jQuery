@@ -20,26 +20,48 @@ $("#signUpButton").click(function(){
   $('a[href$="#product"]').dblclick(function () {
     $('a[href$="#product"]').hide();
   });
-*/
+
 // 4
 
-// let i;
-
-var i = 1;
+var i = 0;
 
 
   $("img").click(function () {
-    if ($("#cartIcon").hasClass("glyphicon-shopping-cart")) {
+   
+
+      i++;
 
       $("#cartIcon").attr("class", "glyphicon glyphicon-ok-circle");
-      $('a[href$="#Cart"]').append("(" + i + ")");
-      console.log("the onefdsfsd"); 
+      $('a[href$="#Cart"] span:nth-child(2)').html("(" + i + ")");
+      console.log("the onefdsfsd" + i); 
 
-    } else {
-
-      i ++;
-      $('a[href$="#Cart"]').replaceWith($('a[href$="#Cart"]').append("(" + i + ")"));
-      console.log("the one" + i);
-
-    }
+    
   });
+
+
+// 5
+
+
+$("img").on('mousemove', function(e){
+ 
+  let src = e.target.src.split('/');
+  let file = src[src.length - 1].split('.').slice(0, -1).join('.');
+
+  console.log("l'utilisateur regarde l'" + file);
+  
+});
+
+
+
+// 6
+
+$(".form-control").click(function () {
+
+  console.log("l'utilisateur vient de cliquer sur le champ de mail");
+});
+
+$(".form-control").on("input", function () {
+
+  console.log("L'utilisateur renseigne son email");
+});
+*/
